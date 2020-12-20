@@ -17,6 +17,7 @@ isTruthy(NaN);
 isTruthy(0);
 isTruthy(-0);
 isTruthy(false);
+isTruthy(``);
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
@@ -100,7 +101,7 @@ carro.addPessoas = function(nPessoas){
         //var frase1 = `Só cabem mais `+ pessoasFaltam + pessoasFrase;
         //var frase2 = `Já temos `+ carro.quantidadePessoas  +` pessoas no carro!`;
 
-        if(carro.quantidadePessoas  == carro.assentos){
+        if(carro.quantidadePessoas  == carro.assentos && soma >=  carro.quantidadePessoas){
         return `O carro já está lotado!`;
         }
 
